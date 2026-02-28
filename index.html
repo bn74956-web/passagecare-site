@@ -102,7 +102,6 @@
   <div class="nav-links" id="navLinks">
     <a href="#how-it-works">How It Works</a>
     <a href="#pricing">Pricing</a>
-    <a href="#vision">Our Vision</a>
     <a href="#waitlist" class="nav-cta">Get Help Now</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -208,23 +207,6 @@
   </div>
 </section>
 
-<section class="section" id="vision">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Building the infrastructure for end-of-life care.</h2>
-      <p class="section-subtitle centered">Passage isn't just an app — it's a platform that modernizes a $20 billion industry that hasn't changed in decades.</p>
-    </div>
-    <div class="vision-grid">
-      <div class="vision-card"><div class="vision-icon" style="background:var(--blue-100)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-600)" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Compliance Moat</h3><p>State-by-state jurisdiction rules engine creates a regulatory barrier that's hard to replicate. We build the maps, not just the route.</p></div>
-      <div class="vision-card"><div class="vision-icon" style="background:var(--green-soft)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Marketplace Revenue</h3><p>Commission on vendor bookings, pre-need subscriptions, memorial add-ons, and white-label licensing to institutional partners.</p></div>
-      <div class="vision-card"><div class="vision-icon" style="background:#FFF3E0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E65100" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Nationwide Scale</h3><p>Virginia pilot → multi-state expansion using licensed Director-of-Record partnerships. Playbook repeats in every state.</p></div>
-    </div>
-    <div class="text-center" style="margin-top:48px">
-      <p style="font-size:16px;color:var(--warm);margin-bottom:16px">Interested in our vision?</p>
-      <a href="mailto:ben@passagecare.co" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--blue-700);color:#fff;border-radius:14px;font-weight:700;font-size:15px;text-decoration:none;transition:all .2s">Contact Founders <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-    </div>
-  </div>
-</section>
 
 <section class="cta-section" id="waitlist">
   <h2>Plan Ahead When We Launch.</h2>
@@ -246,7 +228,6 @@
     <div class="footer-links">
       <a href="#how-it-works">How It Works</a>
       <a href="#pricing">Pricing</a>
-      <a href="#vision">Vision</a>
       <a href="mailto:ben@passagecare.co">Contact</a>
     </div>
     <div class="footer-note">&copy; 2026 Passage Coordination LLC. All rights reserved. Patent pending.</div>
@@ -270,11 +251,8 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 window.addEventListener('scroll',function(){var n=document.getElementById('nav');if(window.scrollY>20){n.classList.add('nav-scrolled')}else{n.classList.remove('nav-scrolled')}});
 document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open')});
 document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open')})});
-function handleSignup(e,id){e.preventDefault();var f=document.getElementById(id);var email=f.querySelector('input').value;console.log('Signup:',email);f.style.display='none';var m={heroForm:'heroSuccess',ctaForm:'ctaSuccess',modalForm:'modalSuccess'};var el=document.getElementById(m[id]);if(el)el.style.display='block';return false}
-</script>
-</body>
-</html>
+function handleSignup(e,id){e.preventDefault();var f=document.getElementById(id);var email=f.querySelector('input').value;console.log('Signup:',email);f.style.display='no
